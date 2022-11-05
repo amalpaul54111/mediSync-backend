@@ -6,6 +6,8 @@ var DoctorSchema = new Schema({
 	'phone' : String,
 	'designation' : String,
 	'license' : String
+}, {
+	timestamps: true
 });
 
 module.exports = mongoose.model('Doctor', DoctorSchema);
