@@ -5,7 +5,7 @@ var SessionSchema = new Schema({
 	'patient': mongoose.Types.ObjectId,
 	'doctor': mongoose.Types.ObjectId,
 	'reason' : String,
-	'symptoms' : Array,
+	'symptoms' : String,
 	'identified_issue' : String,
 	'opinion': String
 }, {
