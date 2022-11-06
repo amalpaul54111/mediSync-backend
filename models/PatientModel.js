@@ -4,7 +4,11 @@ var Schema   = mongoose.Schema;
 var PatientSchema = new Schema({
 	'name' : String,
 	'phone' : String,
-	'aadhaar' : String
+	'aadhaar' : String,
+	'age': Number,
+	'weight': Number,
+	'height': Number,
+	'sex': String
 },
 {
 	timestamps:true
