@@ -54,7 +54,11 @@ module.exports = {
         var Patient = new PatientModel({
 			name : req.body.name,
 			phone : req.body.phone,
-			aadhaar : req.body.aadhaar
+			aadhaar : req.body.aadhaar,
+            age : req.body.age,
+            weight : req.body.weight,
+            height : req.body.weight,
+            sex : req.body.sex,
         });
 
         Patient.save(function (err, Patient) {
@@ -92,6 +96,10 @@ module.exports = {
             Patient.name = req.body.name ? req.body.name : Patient.name;
 			Patient.phone = req.body.phone ? req.body.phone : Patient.phone;
 			Patient.aadhaar = req.body.aadhaar ? req.body.aadhaar : Patient.aadhaar;
+            Patient.age = req.body.age ? req.body.age : Patient.age;
+            Patient.weight = req.body.weight ? req.body.weight : Patient.weight;
+            Patient.height = req.body.height ? req.body.height : Patient.height;
+            Patient.sex = req.body.sex ? req.body.sex : Patient.sex;
 			
             Patient.save(function (err, Patient) {
                 if (err) {
